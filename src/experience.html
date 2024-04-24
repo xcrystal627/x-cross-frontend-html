@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="my-10 flex juctify-between px-6">
+            <div class=" h-auto min-w-max w-[400px]">
+                <div class="block rounded-lg bg-white p-6  dark:bg-neutral-700">
+                    <div class="text-center">
+                        <div class="relative rounded-full max-w-32 max-h-32 border-gray-300 border-4 border-spacing-4 inline-flex">
+                            <img class="rounded-full mx-auto max-w-32 max-h-32 transition-all duration-500	 hover:scale-105" src="./assets/img/avatar.png" alt="avatar">
+                            <p class=" bottom-1 right-2 absolute rounded-full w-5 h-5 bg-green-400 border-4 border-red-50
+                                     hover:border-green-400 hover:bg-white trasform-all duration-500" onclick="document.getElementById('pick-avatar').click()"></p>
+                        </div>
+                        <input id="pick-avatar" type="file" class="hidden">
+                        <p class="font-sans text-base mt-3 text-neutral-800">
+                            新己 山先
+                        </p>
+                    </div>
+                    <h2 class="mb-3 text-xl font-light text-neutral-800  py-3 border-b-2 border-b-green-700 flex items-center">
+                        ユーザー情報
+                    </h2>
+                    <!-- <hr class="my-4 h-0.5 border-t-0 bg-neutral-300 opacity-80 dark:opacity-50"/> -->
+                    <ul class="ml-4 text-neutral-800 ">
+                        <li class="my-4 text-lg ">
+                            <a href="./user.html">アカウント</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="profile.html">プロフィール(受注者)</a>
+                        </li>
+                        <li class="my-4 text-lg  ">
+                            <a href="profile-customer.html">プロフィール(発注者)</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="skill.html">スキル</a>
+                        </li>
+                        <li class="my-4 text-lg text-green-600">
+                            <a href="experience.html">経歴登録</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="certification.html">資格</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="verification.html">パスワード編集・本人確認</a>
+                        </li>                        
+                        <li class="my-4 text-lg">
+                            <a href="myproject.html">私のプロジェクト</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="payment.html">支払方法</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="inquiry.html">問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-4 w-full block rounded-lg bg-white p-6 border-neutral-300 border-solid border-2 dark:bg-neutral-700">
+                <div class="mx-4">
+                    <div class="flex flex-col">
+                        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                            <div class="overflow-hidden">
+                              <table class="min-w-full text-left text-sm font-light">
+                                <thead class="border-b font-medium dark:border-neutral-500">
+                                  <tr>
+                                    <th scope="col" class="px-6 py-4  w-32">タイトル</th>
+                                    <th scope="col" class="px-6 py-4  w-32">期限</th>
+                                    <th scope="col" class="px-6 py-4 w-auto" >説明文</th>
+                                    <th scope="col" class="px-6 py-4 w-[150px]"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="border-b dark:border-neutral-500">
+                                    <td class="whitespace-nowrap px-6 py-4">DJangoによる求人サイト開発</td>
+                                    <td class="whitespace-nowrap px-6 py-4 font-medium">2023.4.6~2023.4.10</td>
+                                    <td class="whitespace-nowrap px-6 py-4">Xross-pointサイト制作に参加しました。</td>
+                                    <td class="whitespace-nowrap px-6 py-4">
+                                        <button type="button"  class="inline-block rounded bg-info px-6 pb-2 pt-2.5 text-lg  font-light leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]">
+                                            編集
+                                        </button>         
+                                        <button   type="button"  class="inline-block rounded bg-danger px-6 pb-2 pt-2.5 text-lg   leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:bg-danger-600 hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:bg-danger-600 focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:outline-none focus:ring-0 active:bg-danger-700 active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(220,76,100,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)]">
+                                            削除
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr class="border-b dark:border-neutral-500">
+                                    <td class="whitespace-nowrap px-6 py-4">DJangoによる求人サイト開発</td>
+                                    <td class="whitespace-nowrap px-6 py-4 font-medium">2023.4.6~2023.4.10</td>
+                                    <td class="whitespace-nowrap px-6 py-4">Xross-pointサイト制作に参加しました。</td>
+                                    <td class="whitespace-nowrap px-6 py-4">
+                                        <button type="button"  class="inline-block rounded bg-info px-6 pb-2 pt-2.5 text-lg   leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]">
+                                            編集
+                                        </button>         
+                                        <button   type="button"  class="inline-block rounded bg-danger px-6 pb-2 pt-2.5 text-lg   leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:bg-danger-600 hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:bg-danger-600 focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:outline-none focus:ring-0 active:bg-danger-700 active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(220,76,100,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)]">
+                                            削除
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr class="border-b dark:border-neutral-500">
+                                    <td class="whitespace-nowrap px-6 py-4">DJangoによる求人サイト開発</td>
+                                    <td class="whitespace-nowrap px-6 py-4 font-medium">2023.4.6~2023.4.10</td>
+                                    <td class="whitespace-nowrap px-6 py-4">Xross-pointサイト制作に参加しました。</td>
+                                    <td class="whitespace-nowrap px-6 py-4">
+                                        <button type="button"  class="inline-block rounded bg-info px-6 pb-2 pt-2.5 text-lg  leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]">
+                                            編集
+                                        </button>         
+                                        <button   type="button"  class="inline-block rounded bg-danger px-6 pb-2 pt-2.5 text-lg  leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:bg-danger-600 hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:bg-danger-600 focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:outline-none focus:ring-0 active:bg-danger-700 active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(220,76,100,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)]">
+                                            削除
+                                        </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mb-12 ">
+                    <form>
+                        <div class=" my-4 flex align-middle mx-4 ">
+                            <span class=" text-xl font-bold  text-neutral-600">
+                                タイトル
+                                </span>
+                            <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                    text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                    必須
+                            </span>
+                        </div>
+                        <div class=" flex w-full ">
+                            <div class=" relative mb-3 w-full mx-4 " data-te-input-wrapper-init>
+                                <input type=" text " class="text-neutral-600 peer block min-h-[auto] w-full rounded border-0
+                                        bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear
+                                        focus:placeholder:opacity-100 peer-focus:text-primary
+                                        data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200
+                                        dark:placeholder:text-neutral-200 dark:peer-focus:text-primary
+                                        [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 " id=" input-experiencettl " placeholder=" タイトル " />
+                                <label for=" input-experiencettl " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                        max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all
+                                        duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                        peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                        motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                        タイトル
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" w-full px-4">
+                            <div class="my-4 flex align-middle ">
+                                <span class=" text-xl font-bold  text-neutral-600">
+                                    説明文
+                                </span>
+                                <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                    text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                    必須
+                                </span>
+                            </div>
+                            <div class=" relative w-full " data-te-input-wrapper-init>
+                                <textarea class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    rows="5" id=" input-pr " placeholder="説明文"></textarea>
+                                <label for=" input-pr " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                    max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all
+                                    duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                    peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                    motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">説明文
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" w-full">
+                            <div class=" my-4 flex align-middle mx-4 ">
+                                <span class=" text-xl font-bold  text-neutral-600">
+                                    作成した時期
+                                </span>
+                                <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                        text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                        必須
+                                </span>
+                            </div>
+
+                            <div class="w-full flex items-center ml-4">
+                                <div class="relative mb-3 w-[200px]" data-te-datepicker-init data-te-inline="true" data-te-input-wrapper-init>
+                                    <input type="text" class="text-neutral-600 peer block min-h-[auto]  w-full rounded border-0 bg-transparent px-3 py-[0.6rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0" />
+                                    <label for="floatingInput" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.6rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">開始日</label>
+                                </div>
+                                  
+                                <div class="flex items-center justify-center w-[50px]">~</div>
+                                <div class="relative mb-3  w-[200px]" data-te-datepicker-init  data-te-inline="true" data-te-input-wrapper-init >
+                                    <input type="text" class="text-neutral-600 peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.6rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"/>
+                                    <label for="floatingInput" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.6rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">終了日</label>
+                                </div>
+                                <div class=" mb-3 mx-4 block w-[60px] pl-[1.5rem]">
+                                    <input class="text-neutral-600 relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid
+                                        border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                                        type="checkbox" value=""  id="current_working_checkbox" />
+                                    <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="current_working_checkbox">
+                                      現在
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class=" my-4 flex align-middle mx-4 ">
+                                <span class=" text-xl font-bold  text-neutral-600">
+                                    関連URL
+                                </span>
+                            </div>
+                            <div class=" flex w-full ">
+                                <div class=" relative mb-3 w-full mx-4 " data-te-input-wrapper-init>
+                                    <input type=" text " class="text-neutral-600 peer block min-h-[auto] w-full rounded border-0
+                                            bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear
+                                            focus:placeholder:opacity-100 peer-focus:text-primary
+                                            data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200
+                                            dark:placeholder:text-neutral-200 dark:peer-focus:text-primary
+                                            [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 " id=" input-rerurl " placeholder=" 関連URL " />
+                                    <label for=" input-rerurl " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                            max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all
+                                            duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                            peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                            motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                            関連URL
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full my-4  px-4 flex justify-start">
+                            <div class="bg-white p7 rounded w-full mx-auto">
+                                <div x-data="dataFileDnD()" class="relative flex flex-col p-4 text-gray-400 border border-gray-200 rounded">
+                                    <div x-ref="dnd" class="relative flex flex-col text-gray-400 border border-gray-200 border-dashed rounded cursor-pointer">
+                                        <input type="file"  accept="image/*" multiple class="absolute inset-0 z-50 w-full h-full p-0 m-0 outline-none opacity-0 cursor-pointer" @change="addFiles($event)"  title="" />
+                                        <div class="flex flex-col items-center justify-center py-10 text-center">
+                                            <svg class="w-6 h-6 mr-1 text-current-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            <p class="m-0">このエリアをクリックします。</p>
+                                        </div>
+                                    </div>
+
+                                    <template x-if="files.length > 0">
+                                        <div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-6" @drop.prevent="drop($event)"
+                                            @dragover.prevent="$event.dataTransfer.dropEffect = 'move'">
+                                            <template x-for="(_, index) in Array.from({ length: files.length })">
+                                                <div class="relative flex flex-col items-center overflow-hidden text-center bg-gray-100 border rounded cursor-move select-none"
+                                                    style="padding-top: 100%;" @dragstart="dragstart($event)" @dragend="fileDragging = null"
+                                                    :class="{'border-blue-600': fileDragging == index}" draggable="true" :data-index="index">
+                                                    <button class="absolute top-0 right-0 z-50 p-1 bg-white rounded-bl focus:outline-none" type="button" @click="remove(index)">
+                                                        <svg class="w-4 h-4 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                        </svg>
+                                                    </button>
+                                                    <template x-if="files[index].type.includes('audio/')">
+                                                        <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                                        </svg>
+                                                    </template>
+                                                    <template x-if="files[index].type.includes('application/') || files[index].type === ''">
+                                                        <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                                        </svg>
+                                                    </template>
+                                                    <template x-if="files[index].type.includes('image/')">
+                                                        <img class="absolute inset-0 z-0 object-cover w-full h-full border-4 border-white preview"
+                                                            x-bind:src="loadFile(files[index])" />
+                                                    </template>
+                                                    <template x-if="files[index].type.includes('video/')">
+                                                        <video  class="absolute inset-0 object-cover w-full h-full border-4 border-white pointer-events-none preview">
+                                                            <fileDragging x-bind:src="loadFile(files[index])" type="video/mp4">
+                                                        </video>
+                                                    </template>
+
+                                                    <div class="absolute bottom-0 left-0 right-0 flex flex-col p-2 text-xs bg-white bg-opacity-50">
+                                                        <span class="w-full font-bold text-gray-900 truncate" x-text="files[index].name">Loading</span>
+                                                        <span class="text-xs text-gray-900" x-text="humanFileSize(files[index].size)">...</span>
+                                                    </div>
+
+                                                    <div class="absolute inset-0 z-40 transition-colors duration-300" @dragenter="dragenter($event)" @dragleave="fileDropping = null" :class="{'bg-blue-200 bg-opacity-80': fileDropping == index && fileDragging != index}">
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-20 flex justify-center">
+                            <button type="button" class="mx-8 inline-block rounded-full border-2 border-success w-32 pb-2.5 pt-3  text-lg  font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"  data-te-ripple-init>
+                                編集
+                            </button>
+                            <button type="button" class="mx-8 inline-block rounded-full border-2 border-danger w-32 pb-2.5 pt-3  text-lg font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10" data-te-ripple-init>
+                                キャンセル
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src=" ../node_modules/tw-elements/dist/js/tw-elements.umd.min.js " type=" text/javascript "></script>
+
+<script src="./assets/js/alpine.min.js" defer></script>
+<script src="./assets/js/create-file-list.js"></script>
+<script src="./assets/js/datepicker.js"></script>
+<script src="./assets/js/picture-input.js"></script>
+
+</html>

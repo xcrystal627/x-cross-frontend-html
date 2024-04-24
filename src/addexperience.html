@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <script src="./assets/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="mt-10 flex juctify-between px-6">
+            <div class=" h-auto min-w-max w-[400px]">
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <div class="text-center">
+                        <div class="relative rounded-full max-w-32 max-h-32 border-gray-300 border-4 border-spacing-4 inline-flex">
+                            <img class="rounded-full mx-auto max-w-32 max-h-32 transition-all duration-500	 hover:scale-105" src="./assets/img/avatar.png" alt="avatar">
+                            <p class=" bottom-1 right-2 absolute rounded-full w-5 h-5 bg-green-400 border-4 border-red-50
+                                     hover:border-green-400 hover:bg-white trasform-all duration-500" onclick="document.getElementById('pick-avatar').click()"></p>
+                        </div>
+                        <input id="pick-avatar" type="file" class="hidden">
+                        <p class="font-sans text-base mt-3">
+                            新己 山先
+                        </p>
+                    </div>
+                    <h2 class="mb-3 text-xl font-light py-3 border-b-2 border-b-green-700 flex items-center">
+                        ユーザー情報
+                    </h2>
+                    <!-- <hr class="my-4 h-0.5 border-t-0 bg-neutral-300 opacity-80 dark:opacity-50"/> -->
+                    <ul class="ml-4">
+                        <li class="my-4 text-lg">
+                            <a href="./user.html">アカウント</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="profile.html">プロフィール</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="addexperience.html">経歴登録</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="">私のプロジェクト</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="">支払方法</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="">問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-4 w-full block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class=" mb-12 ">
+                    <form>
+                        <div class=" my-4 flex align-middle mx-4 ">
+                            <span class=" text-xl font-bold ">
+                                タイトル
+                                </span>
+                            <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                    text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                    必須
+                            </span>
+                        </div>
+                        <div class=" flex w-full ">
+                            <div class=" relative mb-3 w-full mx-4 " data-te-input-wrapper-init>
+                                <input type=" text " class=" peer block min-h-[auto] w-full rounded border-0
+                                        bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear
+                                        focus:placeholder:opacity-100 peer-focus:text-primary
+                                        data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200
+                                        dark:placeholder:text-neutral-200 dark:peer-focus:text-primary
+                                        [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 " id=" input-experiencettl " placeholder=" タイトル " />
+                                <label for=" input-experiencettl " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                        max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-600 transition-all
+                                        duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                        peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                        motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                        タイトル
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" w-full px-4">
+                            <div class="my-4 flex align-middle ">
+                                <span class=" text-xl font-bold ">
+                                        概要
+                                    </span>
+                                <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                        text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                        必須
+                                    </span>
+                            </div>
+                            <div class=" relative w-full " data-te-input-wrapper-init>
+                                <textarea class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    rows="5" id=" input-pr " placeholder="概要"></textarea>
+                                <label for=" input-pr " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                            max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-600 transition-all
+                                            duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                            peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                            motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">概要
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class=" my-4 flex align-middle mx-4 ">
+                            <span class=" text-xl font-bold ">
+                                期間
+                            </span>
+                            <span class=" inline-block whitespace-nowrap rounded-full bg-pink-500 ml-2 px-3 py-2
+                                    text-center align-baseline text-[0.75em] font-bold leading-none text-white ">
+                                    必須
+                            </span>
+                        </div>
+                        <div class=" flex w-full ">
+                            <div class="relative mb-3" data-te-datepicker-init>
+                                <input type="text" class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    placeholder="Select a date" />
+                                <label for="floatingInput" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-600 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Select a date</label
+                                >
+                              </div>
+                              
+                            <p class="flex items-center justify-center">~</p>
+                            <div class="relative mb-3" data-te-datepicker-init>
+                                <input type="text" class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    placeholder="Select a date" />
+                                <label for="floatingInput" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-600 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Select a date</label
+                                >
+                              </div>
+                        </div>
+
+                        <div class=" my-4 flex align-middle mx-4 ">
+                            <span class=" text-xl font-bold ">
+                                参考URL
+                            </span>
+                        </div>
+                        <div class=" flex w-full ">
+                            <div class=" relative mb-3 w-full mx-4 " data-te-input-wrapper-init>
+                                <input type=" text " class=" peer block min-h-[auto] w-full rounded border-0
+                                        bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear
+                                        focus:placeholder:opacity-100 peer-focus:text-primary
+                                        data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200
+                                        dark:placeholder:text-neutral-200 dark:peer-focus:text-primary
+                                        [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 " id=" input-rerurl " placeholder=" 参考URL " />
+                                <label for=" input-rerurl " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                        max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-600 transition-all
+                                        duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                        peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                        motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                        参考URL
+                                </label>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="mt-20 flex justify-center">
+                    <button type="button" class="mx-8 inline-block rounded-full border-2 border-success w-32 pb-2.5 pt-3  text-lg  font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                        data-te-ripple-init>
+                        編集
+                    </button>
+                    <button type="button" class="mx-8 inline-block rounded-full border-2 border-danger w-32 pb-2.5 pt-3  text-lg font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                        data-te-ripple-init>
+                        キャンセル
+                    </button>
+                </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src=" ../node_modules/tw-elements/dist/js/tw-elements.umd.min.js " type=" text/javascript "></script>
+
+</html>

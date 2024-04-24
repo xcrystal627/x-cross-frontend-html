@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <script src="./assets/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="my-10 flex juctify-between px-6">
+            <div class=" h-auto min-w-max w-[400px]">
+                <div class="block rounded-lg bg-white p-6   dark:bg-neutral-700">
+                    <div class="text-center">
+                        <div class="relative rounded-full max-w-32 max-h-32 border-gray-300 border-4 border-spacing-4 inline-flex">
+                            <img class="rounded-full mx-auto max-w-32 max-h-32 transition-all duration-500	 hover:scale-105" src="./assets/img/avatar.png" alt="avatar">
+                            <p class=" bottom-1 right-2 absolute rounded-full w-5 h-5 bg-green-400 border-4 border-red-50
+                                     hover:border-green-400 hover:bg-white trasform-all duration-500" onclick="document.getElementById('pick-avatar').click()"></p>
+                        </div>
+                        <input id="pick-avatar" type="file" class="hidden">
+                        <p class="font-sans text-base mt-3 text-neutral-800">
+                            新己 山先
+                        </p>
+                    </div>
+                    <h2 class="mb-3 text-xl font-light text-neutral-800  py-3 border-b-2 border-b-green-700 flex items-center">
+                        ユーザー情報
+                    </h2>
+                    <!-- <hr class="my-4 h-0.5 border-t-0 bg-neutral-300 opacity-80 dark:opacity-50"/> -->
+                    <ul class="ml-4 text-neutral-800 ">
+                        <li class="my-4 text-lg ">
+                            <a href="./user.html">アカウント</a>
+                        </li> 
+                        <li class="my-4 text-lg ">
+                            <a href="profile.html">プロフィール(受注者)</a>
+                        </li>
+                        <li class="my-4 text-lg  ">
+                            <a href="profile-customer.html">プロフィール(発注者)</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="skill.html">スキル</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="experience.html">経歴登録</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="certification.html">資格</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="verification.html">パスワード編集・本人確認</a>
+                        </li>                        
+                        <li class="my-4 text-lg">
+                            <a href="myproject.html">私のプロジェクト</a>
+                        </li>
+                        <li class="my-4 text-lg">
+                            <a href="payment.html">支払方法</a>
+                        </li>
+                        <li class="my-4 text-lg text-green-600">
+                            <a href="inquiry.html">問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-4 w-full block rounded-lg bg-white p-6   border-neutral-300 border-solid border-2 dark:bg-neutral-700">
+                <div class=" mb-12 ">
+                    <form>
+                        <div class=" w-full px-4">
+                            <div class=" relative mb-3 w-full " data-te-input-wrapper-init>
+                                <input type=" text " class="text-neutral-600 peer block min-h-[auto] w-full rounded border-0
+                                        bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear
+                                        focus:placeholder:opacity-100 peer-focus:text-primary
+                                        data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200
+                                        dark:placeholder:text-neutral-200 dark:peer-focus:text-primary
+                                        [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 " id=" input-subject " placeholder=" " />
+                                <label for=" input-subject " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                        max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all
+                                        duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                        peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                        motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                    主題
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class=" w-full my-4 px-4">
+                            <div class=" relative w-full " data-te-input-wrapper-init>
+                                <textarea class="text-neutral-600 peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    id="exampleFormControlTextarea1" rows="15" id=" input-content " ></textarea>
+                                <label for=" input-content " class=" pointer-events-none absolute left-3 top-0 mb-0
+                                            max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all
+                                            duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary
+                                            peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8]
+                                            motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ">
+                                    お問合せ内容
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mt-20 flex justify-center">
+                            <button type="button" class="mx-8 inline-block rounded-full border-2 border-success w-32 pb-2.5 pt-3 text-lg  font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                                data-te-ripple-init>
+                                送信
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src=" ../node_modules/tw-elements/dist/js/tw-elements.umd.min.js " type=" text/javascript "></script>
+
+</html>
